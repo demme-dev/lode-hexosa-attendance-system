@@ -1,0 +1,38 @@
+# Environment variables and local secrets
+.env
+.env.*
+!.env.example
+.auth-secret
+**/*secret*
+**/*credential*
+**/*password*
+
+# Private keys and certificates
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.cer
+
+# Dependencies and generated output
+node_modules/
+dist/
+build/
+coverage/
+.cache/
+.vite/
+
+# Logs and temporary files
+*.log
+*.tmp
+
+# Local database files, dumps, and backups
+*.sql
+!backend/migrations/**/*.sql
+*.sqlite
+*.sqlite3
+*.db
+*.bak
+*.backup
+*.dump
