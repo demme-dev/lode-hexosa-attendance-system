@@ -1,4 +1,5 @@
 import React from 'react';
+import Logo from './Logo';
 import { 
   IconDashboard, 
   IconUsers, 
@@ -39,7 +40,9 @@ export default function Sidebar({ activeTab, setActiveTab, isOpen, setIsOpen, ro
         {/* Sidebar Header / Brand */}
         <div className="sidebar-brand">
           <div className="brand-logo-container">
-            <div className="brand-logo-emblem">LH</div>
+            <div className="brand-logo-emblem">
+              <Logo />
+            </div>
             <div className="brand-text">
               <span className="brand-name">Lode Hexosa</span>
               <span className="brand-subtitle">Administration System</span>

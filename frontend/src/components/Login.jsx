@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Logo from './Logo';
 
 export default function Login({ onLogin }) {
   const [email, setEmail] = useState('');
@@ -22,7 +23,9 @@ export default function Login({ onLogin }) {
   return (
     <main className="auth-screen">
       <section className="auth-panel" aria-labelledby="login-title">
-        <div className="auth-brand-mark" aria-hidden="true">LH</div>
+        <div className="auth-brand-mark">
+          <Logo />
+        </div>
         <p className="auth-eyebrow">LODE HEXOSA ADMINISTRATION</p>
         <h1 id="login-title">Sign in</h1>
         <p className="auth-subtitle">Use your authorized account to continue.</p>
