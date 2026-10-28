@@ -86,20 +86,6 @@ export default function Sidebar({ activeTab, setActiveTab, isOpen, setIsOpen, ro
           </ul>
         </nav>
 
-        {/* Sidebar Footer System Status */}
-        <div className="sidebar-footer">
-          <div className="system-status-card">
-            <div className="status-indicator-row">
-              <span className="status-beacon"></span>
-              <span className="status-title">Backend Status</span>
-            </div>
-            <div className="status-detail">
-              <IconShield size={14} className="status-icon" />
-              <span>API: Port 5000</span>
-            </div>
-            <div className="status-badge-live">MySQL Online</div>
-          </div>
-        </div>
       </aside>
     </>
   );

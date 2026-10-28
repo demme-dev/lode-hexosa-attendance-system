@@ -53,12 +53,6 @@ export default function Header({
       </div>
 
       <div className="header-right">
-        {/* Backend Connected Indicator */}
-        <div className="backend-indicator" title="Connected to http://localhost:5000">
-          <span className="indicator-dot"></span>
-          <span className="indicator-label">API Connected</span>
-        </div>
-
         {/* Sync / Refresh Button */}
         <button 
           className={`btn-icon-secondary ${isRefreshing ? 'is-spinning' : ''}`}
